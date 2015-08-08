@@ -1,0 +1,12 @@
+来自于：
+AltBeacon：
+android-beacon-library-reference-master
+
+1.由于java目录不在源文件编译路径，需要：
+在src中建立各个包，如org.altbeacon.beacon,org.altbeacon.beaconreference
+将java目录下的相应文件移入src中
+
+2.添加libs目录，置入libs/android-support-v4.jar，自动在Android Private Libraries添加此文件
+
+3. project.properties文件添加：（可以通过选取工程目录，右键点击properties设置）
+   android.library.reference.1=../atlbeacon_libray_master
